@@ -1,4 +1,10 @@
-# Markov Process
+
+# EXP. NO: 05
+
+# DATE: 
+
+
+# <p align = "center"> Markov Process </p>
 
 
 # Aim : 
@@ -24,9 +30,24 @@ Assumptions for Markov Chain :
 
 
 # Program
+```python
+# Developed by:Kumaran.B
+# Reg no:212220230026
+import numpy as np
+p0=[0.3,0.2,0.5]
+p=[[0,2/3,1/3],[1/2,0,1/2],[1/2,1/2,0]]
+n=10
+for i in range(1,n+1):
+    p0=np.multiply(p0,p)
+    print("The %d -step probability distribution is"%i)
+    print(p0)
+```    
+    
+
+# Output : 
+![Screenshot (243)](https://user-images.githubusercontent.com/75243072/170193891-8b5b1fa0-e8eb-4f51-8353-c5b1601128a0.png)
+![Screenshot (244)](https://user-images.githubusercontent.com/75243072/170193978-4ace6c31-dab4-4fd8-955d-09c27357afd6.png)
 
 
 
-
-# Results and Output : 
-
+# Result: 
